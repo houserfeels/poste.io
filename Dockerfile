@@ -1,4 +1,4 @@
-FROM poste.io/mailserver:latest
+FROM poste.io/mailserver
 RUN apt-get update && apt-get install less  # 'less' is Useful for debugging
 
 # Default to listening only on IPs bound to the container hostname
