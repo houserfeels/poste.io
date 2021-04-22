@@ -1,4 +1,5 @@
-FROM poste.io/mailserver
+ARG UPSTREAM=2.2.27
+FROM poste.io/mailserver:$UPSTREAM
 RUN apt-get update && apt-get install less  # 'less' is Useful for debugging
 
 # Default to listening only on IPs bound to the container hostname
